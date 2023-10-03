@@ -3,4 +3,5 @@ void main(List<String> args) {
   var umur = [30, 25, 20, 22];
 
   var getName = nama[3];
+  print(getName);
 }
