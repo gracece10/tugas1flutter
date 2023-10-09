@@ -1,22 +1,25 @@
 import 'class.dart';
 
 void main() {
-  //var person1 = person(); //Buat Objek Cara Pertama //sifatnya mengkonversi
-  person person1 =
-      person(); //Buat Objek Cara Kedua //idealnya lebih bagus buat dengan person atau class
+  //var Person1 = Person(); //Buat Objek Cara Pertama //sifatnya mengkonversi
+
+  //Buat Objek Cara Kedua //idealnya lebih bagus buat dengan Person atau class
+  Person Person1 = Person();
+
+  //Buat objek menggunakan kata 'new' ('new' di dart versi baru walau bisa di jalankan tapi sudah tdk di rekomendasikan untuk digunakan lagi) 'Unncessary new keyword'
+  //var Person1 = new Person();
+  //Person Person1 = new Person();
 
   //Mengisi Data
-  person1.name = 'Grace';
-  person1.age = 19;
+  Person1.name = 'Grace';
 
   //Menampilkan Data
-  print(person1.name);
-  print(person1.age);
+  print(Person1.name);
 
   //Manggil Function
-  person1.hitungusia();
-  person1.lastName();
+  //Person1.hitungusia();
+  //Person1.lastName();
 
-  String fullName = person1.name! + ' ' + person1.lastName();
-  print(fullName);
+  /*String fullName = Person1.name! + ' ' + Person1.lastName();
+  print(fullName);*/
 }

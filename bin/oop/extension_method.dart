@@ -19,6 +19,13 @@ class Person {
   }
 }
 
+//Extension Method , ingin method tambahan tanpa mengubah isi dari class nya bisa gunakan extension method
+extension SayGoodByeOnPerson on Person {
+  void sayGoodBye(String paramName) {
+    print("Good Bye $paramName, from $name");
+  }
+}
+
 void main() {
   var person1 = Person(); //Objek Pertama
   //Manipulasi Field
@@ -33,6 +40,9 @@ void main() {
   //Memanggil Method
   person1.sayHello("Grace");
   person1.hello();
+
+  //Memanggil Extension Method
+  person1.sayGoodBye("Amianie");
 
   Person person2 = Person(); //Objek Kedua
   print(person2);
