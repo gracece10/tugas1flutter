@@ -10,7 +10,7 @@ class Customer {
       : firstName = fullName.split(" ")[0],
         middleName = fullName.split(" ")[1],
         lastName = fullName.split(" ")[2] {
-    print('Create new customer');
+    print('Create new custome');
   }
 }
 
