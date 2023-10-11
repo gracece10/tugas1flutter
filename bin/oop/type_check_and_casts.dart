@@ -11,6 +11,7 @@ class VicePresident extends Manager {
   VicePresident(String name) : super(name);
 }
 
+//Type check n casts
 void sayHello(Employee employee) {
   if (employee is VicePresident) {
     VicePresident vicePresident = employee as VicePresident;
