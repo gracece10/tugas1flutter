@@ -9,6 +9,11 @@ class Prodct {
   int? _getQuantity() {
     return _quantity;
   }
+
+  //toString Method
+  String toString() {
+    return "Product{id = $id,name=$name,quantity=$_quantity}";
+  }
 }
 
 void main() {
