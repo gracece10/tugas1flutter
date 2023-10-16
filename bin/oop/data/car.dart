@@ -21,3 +21,9 @@ class Avanza implements Car {
     return 4;
   }
 }
+
+void main() {
+  var avanza = Avanza();
+  avanza.drive();
+  print(avanza.getTier());
+}
